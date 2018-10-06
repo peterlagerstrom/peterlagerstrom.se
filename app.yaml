@@ -1,5 +1,5 @@
 application: peterlagerstrom-01
-version: 1
+version: 3
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -9,39 +9,55 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /googledce38e530879d696\.html
   static_files: googledce38e530879d696.html
   upload: googledce38e530879d696\.html
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /assets/styles/screen\.css
   mime_type: text/css
   static_files: assets/styles/screen.css
   upload: assets/styles/screen.css
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /assets/fonts/peterlagerstrom-icons\.woff
   static_files: assets/fonts/peterlagerstrom-icons.woff
   upload: assets/fonts/peterlagerstrom-icons\.woff
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /assets/fonts/peterlagerstrom-icons\.ttf
   static_files: assets/fonts/peterlagerstrom-icons.ttf
   upload: assets/fonts/peterlagerstrom-icons\.ttf
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /assets/fonts/peterlagerstrom-icons\.svg
   static_files: assets/fonts/peterlagerstrom-icons.svg
   upload: assets/fonts/peterlagerstrom-icons\.svg
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /assets/fonts/peterlagerstrom-icons\.eot
   static_files: assets/fonts/peterlagerstrom-icons.eot
   upload: assets/fonts/peterlagerstrom-icons\.eot
   expiration: "7d"
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /.*
   static_files: index.html
   upload: index\.html
   expiration: "3d"
+  secure: always
+  redirect_http_response_code: 301
