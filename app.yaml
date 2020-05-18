@@ -1,8 +1,4 @@
-application: peterlagerstrom-01
-version: 3
-runtime: python27
-api_version: 1
-threadsafe: yes
+runtime: nodejs12
 
 handlers:
 - url: /favicon\.ico
@@ -11,6 +7,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /googledce38e530879d696\.html
   static_files: googledce38e530879d696.html
@@ -18,6 +21,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /assets/styles/screen\.css
   mime_type: text/css
@@ -26,6 +36,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /assets/fonts/peterlagerstrom-icons\.woff
   static_files: assets/fonts/peterlagerstrom-icons.woff
@@ -33,6 +50,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /assets/fonts/peterlagerstrom-icons\.ttf
   static_files: assets/fonts/peterlagerstrom-icons.ttf
@@ -40,6 +64,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /assets/fonts/peterlagerstrom-icons\.svg
   static_files: assets/fonts/peterlagerstrom-icons.svg
@@ -47,6 +78,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /assets/fonts/peterlagerstrom-icons\.eot
   static_files: assets/fonts/peterlagerstrom-icons.eot
@@ -54,6 +92,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /.*
   static_files: index.html
@@ -61,3 +106,10 @@ handlers:
   expiration: "3d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
