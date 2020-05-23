@@ -1,3 +1,43 @@
+<template>
+  <div class="layout">
+    <slot/>
+  </div>
+</template>
+
+<style>
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin:0;
+  padding:0;
+  line-height: 1.5;
+}
+
+.layout {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 80px;
+}
+
+.nav__link {
+  margin-left: 20px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0
@@ -35,8 +75,11 @@ a,a:hover,a.visited,a.active {
 
 @font-face {
     font-family: 'peterlagerstrom-icons';
-    src: url('../fonts/peterlagerstrom-icons.eot');
-    src: url('../fonts/peterlagerstrom-icons.eot?#iefix') format('embedded-opentype'),url('../fonts/peterlagerstrom-icons.woff') format('woff'),url('../fonts/peterlagerstrom-icons.ttf') format('truetype'),url('../fonts/peterlagerstrom-icons.svg#peterlagerstrom-icons') format('svg');
+    src: url('/assets/fonts/peterlagerstrom-icons.eot');
+    src: url('/assets/fonts/peterlagerstrom-icons.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/peterlagerstrom-icons.woff') format('woff'),
+         url('/assets/fonts/peterlagerstrom-icons.ttf') format('truetype'),
+         url('/assets/fonts/peterlagerstrom-icons.svg#peterlagerstrom-icons') format('svg');
     font-weight: normal;
     font-style: normal
 }
@@ -110,3 +153,6 @@ a,a:hover,a.visited,a.active {
 .icon-foursquare:before {
     color: #0072b1
 }
+
+
+</style>
