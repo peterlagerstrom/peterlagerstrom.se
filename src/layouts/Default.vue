@@ -3,156 +3,17 @@
     <slot/>
   </div>
 </template>
-
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 * {
-    margin: 0;
-    padding: 0
+  margin:0;
+  padding:0
 }
 
-html,body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    background: -moz-linear-gradient(top,#fff 0,#eaeaea 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#eaeaea));
-    background: -webkit-linear-gradient(top,#fff 0,#eaeaea 100%);
-    background: -o-linear-gradient(top,#fff 0,#eaeaea 100%);
-    background: -ms-linear-gradient(top,#fff 0,#eaeaea 100%);
-    background: linear-gradient(to bottom,#fff 0,#eaeaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eaeaea',GradientType=0);
-    overflow: hidden
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden
 }
-
-ul {
-    width: 700px;
-    font-size: 5em;
-    margin: 200px auto 0
-}
-
-ul>li {
-    display: inline-block;
-    margin: 0 30px
-}
-
-a,a:hover,a.visited,a.active {
-    text-decoration: none
-}
-
-@font-face {
-    font-family: 'peterlagerstrom-icons';
-    src: url('/assets/fonts/peterlagerstrom-icons.eot');
-    src: url('/assets/fonts/peterlagerstrom-icons.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/peterlagerstrom-icons.woff') format('woff'),
-         url('/assets/fonts/peterlagerstrom-icons.ttf') format('truetype'),
-         url('/assets/fonts/peterlagerstrom-icons.svg#peterlagerstrom-icons') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-[data-icon]:before {
-    font-family: 'peterlagerstrom-icons';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased
-}
-
-.icon-github,.icon-twitter,.icon-instagram,.icon-vimeo,.icon-linkedin,.icon-foursquare {
-    font-family: 'peterlagerstrom-icons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased
-}
-
-.icon-github:before {
-    content: "\e001"
-}
-
-.icon-twitter:before {
-    content: "\e000"
-}
-
-.icon-instagram:before {
-    content: "\e002"
-}
-
-.icon-vimeo:before {
-    content: "\e003"
-}
-
-.icon-linkedin:before {
-    content: "\e004"
-}
-
-.icon-foursquare:before {
-    content: "\e005"
-}
-
-.icon-github:before {
-    color: #000
-}
-
-.icon-twitter:before {
-    color: #00aced
-}
-
-.icon-instagram:before {
-    color: #517fa4
-}
-
-.icon-vimeo:before {
-    color: #aad450
-}
-
-.icon-linkedin:before {
-    color: #0177b5
-}
-
-.icon-foursquare:before {
-    color: #0072b1
-}
-
 
 </style>
