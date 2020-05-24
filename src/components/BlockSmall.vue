@@ -34,3 +34,26 @@
       }
    }
 </script>
+<style>
+
+a,a:hover,
+a.visited, 
+a.active{
+  text-decoration:none
+}
+
+li {
+  display: block;
+}
+@media only screen and (min-width: 700px) {
+li {
+  display: inline-block;
+}
+  }
+.icon {
+  width: 80px;
+  display:inline-block;
+  margin:0 30px
+}
+
+</style>
