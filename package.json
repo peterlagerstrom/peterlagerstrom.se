@@ -8,9 +8,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
-  },
-  "devDependencies": {
+    "gridsome": "^0.7.0",
     "vue-svg-loader": "^0.16.0"
   }
 }

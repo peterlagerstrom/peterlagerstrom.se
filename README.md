@@ -1,6 +1,9 @@
+Install
+- yarn install
 
-yarn
+To develop
+- Run gridsome develop to start local development
 
- Enter directory cd peterlagerstrom.se1
-  - Run gridsome develop to start local development
-  - Run gridsome build to build for production
+To deploy
+- Run gridsome build to build for production
+- gcloud app deploy --no-promote --project peterlagerstrom-01 
