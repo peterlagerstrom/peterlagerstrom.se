@@ -1,6 +1,6 @@
 <template>
   <Layout>
-Tyvärr finns det inget här. 
+    Tyvärr finns det inget här. 
   </Layout>
 </template>
 <script>
