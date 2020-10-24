@@ -53,4 +53,10 @@ li {
   display:inline-block;
   margin:0 30px
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .icon svg{
+    fill: #8ec6c5
+  }
+}
 </style>

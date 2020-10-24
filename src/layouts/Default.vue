@@ -21,6 +21,9 @@ body {
     background-color: #8ec6c5
 }
 
-
-
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212
+  }
+}
 </style>
