@@ -1,21 +1,47 @@
 <template>
   <Layout>
-    <ul>
-      <BlockSmall url="http://vimeo.com/user12035599/videos" title="Vimeo" />
-      <BlockSmall url="http://se.linkedin.com/in/peterlagerstrom" title="LinkedIn" />
-      <BlockSmall url="https://twitter.com/peterlagerstrom" title="Twitter" />
-      <BlockSmall url="https://instagram.com/peterlagerstrom" title="Instagram" />  
-      <BlockSmall url="https://github.com/peterlagerstrom" title="Github" />
-    </ul>   
+    <ul >
+      <template v-for="edge in $page.posts.edges">
+        <BlockSmall 
+          v-if="edge.node.type === 'social'" 
+          v-bind:url="edge.node.link" 
+          v-bind:title="edge.node.name"
+           :key="edge.node.link"
+        />
+        <BlockVideo
+          v-if="edge.node.type === 'video'" 
+          v-bind:url="edge.node.link" 
+          v-bind:title="edge.node.name" 
+          v-bind:source="edge.node.source"
+           :key="edge.node.link"
+        />
+      </template>
+    </ul>  
   </Layout>
 </template>
 
+<page-query>
+query {
+  posts: allItems {
+    edges {
+      node {
+        name
+        link
+        type
+        source
+      }
+    }
+  }
+}
+</page-query>
 <script>
   import BlockSmall from '~/components/BlockSmall.vue'
+  import BlockVideo from '~/components/BlockVideo.vue'
 
   export default {
     components: {
-      BlockSmall
+      BlockSmall, 
+      BlockVideo
     },
     metaInfo: {
       title: 'Peter Lagerstr&ouml;m'
