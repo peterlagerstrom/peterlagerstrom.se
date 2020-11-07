@@ -34,29 +34,32 @@
       }
    }
 </script>
-<style>
+<style scoped>
 a,a:hover,
 a.visited, 
 a.active{
-  text-decoration:none
+  text-decoration: none
 }
-li {
-  display: block;
-}
-@media only screen and (min-width: 700px) {
+
 li {
   display: inline-block;
 }
-  }
+
+@media only screen and (min-width: 700px) {
+   li {
+      display: inline-block;
+   }
+}
+
 .icon {
-  width: 80px;
-  display:inline-block;
-  margin:0 30px
+   width: 80px;
+   display: inline-block;
+   margin: 0 30px;
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  .icon svg{
-    fill: #8ec6c5
-  }
+   .icon svg{
+      fill: var(--background-light);
+   }
 }
 </style>

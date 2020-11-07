@@ -44,7 +44,7 @@ query {
       BlockVideo
     },
     metaInfo: {
-      title: 'Peter Lagerstr&ouml;m'
+      title: 'Peter Lagerström'
     }
   }
 </script>
@@ -59,8 +59,8 @@ ul{
 
 @media only screen and (min-width: 700px) {
   ul{
-    width:700px;
-    margin:200px auto 0;
+    width: 700px;
+    margin: 200px auto 0;
   }
 }
 
