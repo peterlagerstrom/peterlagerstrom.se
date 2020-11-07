@@ -10,5 +10,8 @@
   "dependencies": {
     "gridsome": "^0.7.0",
     "vue-svg-loader": "^0.16.0"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.14.0"
   }
 }

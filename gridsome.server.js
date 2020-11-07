@@ -5,6 +5,12 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const fs = require('fs');
+const yaml = require('js-yaml');
+
+const fileContents = fs.readFileSync('./data/items.yaml', 'utf8');
+const items = yaml.safeLoad(fileContents);
+
 module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
@@ -12,5 +18,15 @@ module.exports = function (api) {
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
+  })
+
+  api.loadSource(async actions => {
+    const collection = actions.addCollection({
+      typeName: 'Items'
+    })
+
+    for (const item of items) {
+      collection.addNode(item);
+    }
   })
 }
