@@ -1,9 +1,9 @@
-runtime: nodejs12
+runtime: nodejs18
 
 handlers:
 - url: /googledce38e530879d696\.html
-  static_files: dist/googledce38e530879d696.html
-  upload: dist/googledce38e530879d696\.html
+  static_files: static/googledce38e530879d696.html
+  upload: static/googledce38e530879d696\.html
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
@@ -16,34 +16,8 @@ handlers:
 
 - url: /assets/css/(.*\.css)$
   mime_type: text/css
-  static_files: dist/assets/css/\1
-  upload: dist/assets/css/.*\.css$
-  expiration: "7d"
-  secure: always
-  redirect_http_response_code: 301
-  http_headers:
-    Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
-    X-Frame-Options: 'SAMEORIGIN'
-    X-Content-Type-Options: 'nosniff'
-    Strict-Transport-Security: max-age=31536000; includeSubDomains
-
-- url: /assets/data/(.*)$
-  static_files: dist/assets/data/\1
-  upload: dist/assets/data/.*$
-  expiration: "7d"
-  secure: always
-  redirect_http_response_code: 301
-  http_headers:
-    Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
-    X-Frame-Options: 'SAMEORIGIN'
-    X-Content-Type-Options: 'nosniff'
-    Strict-Transport-Security: max-age=31536000; includeSubDomains
-
-- url: /assets/js/(.*)$
-  static_files: dist/assets/js/\1
-  upload: dist/assets/js/.*$
+  static_files: src/assets/css/\1
+  upload: src/assets/css/.*\.css$
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
@@ -55,8 +29,8 @@ handlers:
     Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /favicon\.ico
-  static_files: dist/favicon.ico
-  upload: dist/favicon\.ico
+  static_files: static/favicon.ico
+  upload: static/favicon\.ico
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
@@ -68,8 +42,8 @@ handlers:
     Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /
-  static_files: dist/index.html
-  upload: dist/index\.html
+  static_files: src/index.html
+  upload: src/index\.html
   expiration: "3d"
   secure: always
   redirect_http_response_code: 301
@@ -82,8 +56,8 @@ handlers:
 
 
 - url: /.*
-  static_files: dist/404.html
-  upload: dist/404\.html
+  static_files: src/404.html
+  upload: src/404\.html
   expiration: "3d"
   secure: always
   redirect_http_response_code: 301
