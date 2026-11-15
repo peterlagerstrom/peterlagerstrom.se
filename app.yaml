@@ -1,4 +1,4 @@
-runtime: nodejs18
+runtime: nodejs24
 
 handlers:
 - url: /googledce38e530879d696\.html
@@ -8,8 +8,9 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   http_headers:
+    Content-Security-Policy: script-src 'self'
     Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    Permissions-Policy: sync-xhr=(), camera=(), microphone=()
     X-Frame-Options: 'SAMEORIGIN'
     X-Content-Type-Options: 'nosniff'
     Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -22,8 +23,9 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   http_headers:
+    Content-Security-Policy: script-src 'self'
     Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    Permissions-Policy: sync-xhr=(), camera=(), microphone=()
     X-Frame-Options: 'SAMEORIGIN'
     X-Content-Type-Options: 'nosniff'
     Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -35,8 +37,9 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   http_headers:
+    Content-Security-Policy: script-src 'self'
     Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    Permissions-Policy: sync-xhr=(), camera=(), microphone=()
     X-Frame-Options: 'SAMEORIGIN'
     X-Content-Type-Options: 'nosniff'
     Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -48,8 +51,9 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   http_headers:
+    Content-Security-Policy: script-src 'self'
     Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    Permissions-Policy: sync-xhr=(), camera=(), microphone=()
     X-Frame-Options: 'SAMEORIGIN'
     X-Content-Type-Options: 'nosniff'
     Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -62,8 +66,9 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   http_headers:
+    Content-Security-Policy: script-src 'self'
     Referrer-Policy: no-referrer-when-downgrade
-    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    Permissions-Policy: sync-xhr=(), camera=(), microphone=()
     X-Frame-Options: 'SAMEORIGIN'
     X-Content-Type-Options: 'nosniff'
     Strict-Transport-Security: max-age=31536000; includeSubDomains
